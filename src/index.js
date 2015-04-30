@@ -1,4 +1,7 @@
-module.exports = function approximateSearch(query, text) {
+module.exports = approximateSearch;
+
+
+function approximateSearch(query, text) {
     var textLength = text.length,
         queryLength = query.length,
         ch, i, j;
@@ -25,4 +28,4 @@ module.exports = function approximateSearch(query, text) {
             return true;
         }
     }
-};
+}
