@@ -2,7 +2,7 @@ var assert = require("assert"),
     approximateSearch = require("../src/index");
 
 
-describe("approximateSearch(query, text)", function() {
+describe("approximateSearch(query, text[, caseSensitive = true])", function() {
     it("should match query in text approximately", function() {
         assert.equal(approximateSearch("twl", "cartwheel"), true);
         assert.equal(approximateSearch("cart", "cartwheel"), true);
