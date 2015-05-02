@@ -16,10 +16,10 @@ function approximateSearch(query, text) {
             j = 0;
 
             outer: while (i < queryLength) {
-                ch = query.charCodeAt(i++);
+                ch = query.charAt(i++).toLowerCase();
 
                 while (j < textLength) {
-                    if (text.charCodeAt(j++) === ch) {
+                    if (text.charAt(j++).toLowerCase() === ch) {
                         continue outer;
                     }
                 }
